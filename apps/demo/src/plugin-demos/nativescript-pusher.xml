@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <ActionBar title="Pusher Demo" class="action-bar">
+    </ActionBar>
+    <StackLayout class="p-20">
+        <Label text="Mensajes de Pusher:" class="h2 m-b-10"/>
+        <ListView items="{{ messages }}" class="list-group">
+            <ListView.itemTemplate>
+                <Label text="{{ $value }}" textWrap="true" class="list-group-item"/>
+            </ListView.itemTemplate>
+        </ListView>
+        <Button text="Desuscribirse" tap="{{ onUnsubscribe }}" class="btn btn-primary m-t-10"/>
+        <Button text="Desconectar" tap="{{ onDisconnect }}" class="btn btn-danger m-t-10"/>
+    </StackLayout>
+</Page>

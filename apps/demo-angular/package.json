@@ -1,7 +1,8 @@
 {
   "main": "./src/main.ts",
   "dependencies": {
-    "@nativescript/core": "file:../../node_modules/@nativescript/core"
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@ivansotelo/nativescript-pusher": "file:../../dist/packages/nativescript-pusher"
   },
   "devDependencies": {
     "@nativescript/android": "~8.8.0",
